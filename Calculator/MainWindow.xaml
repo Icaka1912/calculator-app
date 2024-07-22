@@ -1,0 +1,31 @@
+﻿<Window x:Class="Calculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Calculator"
+        mc:Ignorable="d"
+        Title="Calculator" Height="620" Width="375" Background="White" WindowStyle="ThreeDBorderWindow" Icon="/calculator-2374442_1920.png">
+    <Grid Margin="-21,-123,0,0" Height="817" VerticalAlignment="Top" HorizontalAlignment="Left" Width="503">
+        <Button Content="Button" HorizontalAlignment="Left" Margin="34,636,0,126" Width="79" RenderTransformOrigin="2.133,-3.056" Height="55"/>
+        <Button x:Name="ButtonZero" Content="0" Margin="118,636,0,126" Width="79" RenderTransformOrigin="2.133,-3.056" Height="55" Click="ButtonZero_Click" FontSize="30" FontFamily="Segoe UI Black" VerticalContentAlignment="Center" HorizontalAlignment="Left"/>
+        <Button x:Name="ButtonEqual" Content="=" HorizontalAlignment="Left" Margin="202,636,0,126" Width="79" RenderTransformOrigin="2.133,-3.056" Height="55" FontSize="30" FontFamily="Segoe UI Black" Click="ButtonEqual_Click"/>
+        <Button x:Name="ButtonOne" Content="1" HorizontalAlignment="Left" Margin="34,576,0,186" Width="79" RenderTransformOrigin="2.133,-3.056" Height="55" Click="ButtonOne_Click" FontSize="30" FontFamily="Segoe UI Black"/>
+        <Button x:Name="ButtonTwo" Content="2" HorizontalAlignment="Left" Margin="118,576,0,186" Width="79" RenderTransformOrigin="2.133,-3.056" Height="55" Click="ButtonTwo_Click" FontSize="30" FontFamily="Segoe UI Black"/>
+        <Button x:Name="ButtonThree" Content="3" HorizontalAlignment="Left" Margin="202,576,0,186" Width="79" RenderTransformOrigin="2.133,-3.056" Height="55" Click="ButtonThree_Click" FontSize="30" FontFamily="Segoe UI Black"/>
+        <Button x:Name="ButtonPlus" Content="+" HorizontalAlignment="Left" Margin="286,636,0,126" Width="79" RenderTransformOrigin="2.133,-3.056" Height="55" FontSize="30" FontFamily="Segoe UI Black" Click="ButtonPlus_Click"/>
+        <Button x:Name="ButtonMinus" Content="-" HorizontalAlignment="Left" Margin="286,576,0,186" Width="79" RenderTransformOrigin="2.133,-3.056" Height="55" FontSize="30" FontFamily="Segoe UI Black" Click="ButtonMinus_Click"/>
+        <Button x:Name="ButtonSix" Content="6" HorizontalAlignment="Left" Margin="201,516,0,246" Width="79" RenderTransformOrigin="2.133,-3.056" Height="55" Click="ButtonSix_Click" FontSize="30" FontFamily="Segoe UI Black"/>
+        <Button x:Name="ButtonFive" Content="5" HorizontalAlignment="Left" Margin="118,516,0,246" Width="79" RenderTransformOrigin="2.133,-3.056" Height="55" Click="ButtonFive_Click" FontSize="30" FontFamily="Segoe UI Black"/>
+        <Button x:Name="ButtonFour" Content="4" HorizontalAlignment="Left" Margin="34,516,0,246" Width="79" RenderTransformOrigin="2.133,-3.056" Height="55" Click="ButtonFour_Click" FontSize="30" FontFamily="Segoe UI Black"/>
+        <Button x:Name="ButtonSeven" Content="7" HorizontalAlignment="Left" Margin="34,455,0,307" Width="79" RenderTransformOrigin="2.133,-3.056" Height="55" Click="ButtonSeven_Click" FontSize="30" FontFamily="Segoe UI Black"/>
+        <Button x:Name="ButtonEight" Content="8" HorizontalAlignment="Left" Margin="118,455,0,307" Width="79" RenderTransformOrigin="2.133,-3.056" Height="55" Click="ButtonEight_Click" FontFamily="Segoe UI Black" FontSize="30"/>
+        <Button x:Name="ButtonNine" Content="9" HorizontalAlignment="Left" Margin="202,455,0,307" Width="79" RenderTransformOrigin="2.133,-3.056" Height="55" Click="ButtonNine_Click" FontSize="30" FontFamily="Segoe UI Black"/>
+        <Button x:Name="ButtonMultiplier" Content="X" HorizontalAlignment="Left" Margin="285,516,0,246" Width="79" RenderTransformOrigin="2.133,-3.056" Height="55" FontSize="30" FontFamily="Segoe UI Black" Click="ButtonMultiplier_Click"/>
+        <Button x:Name="ButtonDivision" Content="÷" HorizontalAlignment="Left" Margin="286,455,0,307" Width="79" RenderTransformOrigin="2.133,-3.056" Height="55" FontSize="30" FontFamily="Segoe UI Black" Click="ButtonDivision_Click"/>
+        <TextBox x:Name="DisplayBox" Height="92" Margin="34,316,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="331" BorderBrush="#FF060606" BorderThickness="3,3,3,3" FontFamily="Segoe UI Black" FontSize="45" FontStyle="Oblique" HorizontalAlignment="Left" HorizontalContentAlignment="Right" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="OperandDisplayBox" HorizontalAlignment="Left" Height="72" Margin="34,216,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="292" BorderThickness="0,0,0,0" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" FontSize="25" FontFamily="Segoe UI Black"/>
+        <TextBox x:Name="OperatorDisplayBox" HorizontalAlignment="Left" Height="72" Margin="326,216,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="38" BorderThickness="0,0,0,0" FontSize="25" FontFamily="Segoe UI Black" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="CalculatorMadeBy" HorizontalAlignment="Left" Height="38" Margin="34,129,0,0" TextWrapping="Wrap" Text="Calculator Made By Hristo" VerticalAlignment="Top" Width="356" FontSize="30" FontFamily="Impact" BorderThickness="0,0,0,0" VerticalContentAlignment="Center"/>
+    </Grid>
+</Window>
