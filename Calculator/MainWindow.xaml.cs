@@ -132,15 +132,15 @@ namespace Calculator
             }
             else if (operatorSign == "X")
             {
-                 result = firstNum * secondNum;
+                result = firstNum * secondNum;
             }
             else if (operatorSign == "÷")
             {
                 result = firstNum / secondNum;
-            }         
+            }
             DisplayBox.Text = result.ToString();
             OperatorDisplayBox.Text = "";
-            OperandDisplayBox.Text = "";            
+            OperandDisplayBox.Text = "";
         }
         private void ButtonMultiplier_Click(object sender, RoutedEventArgs e)
         {
@@ -171,5 +171,12 @@ namespace Calculator
                 OperatorDisplayBox.Text = "÷";
             }
         }
+
+        private void ButtonClear_Click(object sender, RoutedEventArgs e)
+        {
+            DisplayBox.Text = "";
+            OperatorDisplayBox.Text = "";
+            OperandDisplayBox.Text = "";
         }
-    }            
+    }
+}

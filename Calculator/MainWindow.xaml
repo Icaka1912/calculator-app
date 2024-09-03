@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Calculator" Height="620" Width="375" Background="White" WindowStyle="ThreeDBorderWindow" Icon="/calculator-2374442_1920.png">
     <Grid Margin="-21,-123,0,0" Height="817" VerticalAlignment="Top" HorizontalAlignment="Left" Width="503">
-        <Button Content="Button" HorizontalAlignment="Left" Margin="34,636,0,126" Width="79" RenderTransformOrigin="2.133,-3.056" Height="55"/>
+        <Button x:Name="ButtonClear" Content="C" HorizontalAlignment="Left" Margin="34,636,0,126" Width="79" RenderTransformOrigin="2.133,-3.056" Height="55" Click="ButtonClear_Click" FontSize="30" FontFamily="Segoe UI Black"/>
         <Button x:Name="ButtonZero" Content="0" Margin="118,636,0,126" Width="79" RenderTransformOrigin="2.133,-3.056" Height="55" Click="ButtonZero_Click" FontSize="30" FontFamily="Segoe UI Black" VerticalContentAlignment="Center" HorizontalAlignment="Left"/>
         <Button x:Name="ButtonEqual" Content="=" HorizontalAlignment="Left" Margin="202,636,0,126" Width="79" RenderTransformOrigin="2.133,-3.056" Height="55" FontSize="30" FontFamily="Segoe UI Black" Click="ButtonEqual_Click"/>
         <Button x:Name="ButtonOne" Content="1" HorizontalAlignment="Left" Margin="34,576,0,186" Width="79" RenderTransformOrigin="2.133,-3.056" Height="55" Click="ButtonOne_Click" FontSize="30" FontFamily="Segoe UI Black"/>
